@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Photo Vault</string>
+    <string name="login">LogIn</string>
+    <string name="signup_text">Dont have an account? SignUp</string>
+    <string name="login_text">Already have an account? LogIn</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="signup">SignUp</string>
+    <string name="full_name">Full Name</string>
+    <string name="logout">LogOut</string>
+    <string name="logged_user">Logged User</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="hi">Hi</string>
+    <string name="choose_file">Choose file</string>
+    <string name="img_name">IMG_NAME</string>
+    <string name="there_is_no_photos_to_display">There is no photos to display</string>
+    <string name="close">CLOSE</string>
+    <string name="download">DOWNLOAD</string>
+    <string name="are_you_sure_to_delete">Are you sure to delete ?</string>
+    <string name="delete">DELETE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="save">save</string>
+    <string name="keep_your_memories_away_from_volatile">keep your memories away from volatile</string>
+</resources>

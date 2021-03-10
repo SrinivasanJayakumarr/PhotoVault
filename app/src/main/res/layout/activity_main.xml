@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:padding="@dimen/_10sdp"
+    android:background="@color/dark_blue">
+
+    <ProgressBar
+        android:id="@+id/progress_bar_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img"
+        android:layout_width="@dimen/_33sdp"
+        android:layout_height="@dimen/_33sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:src="@drawable/ic_launcher_mdpi"
+        android:scaleType="centerCrop"
+        app:civ_border_width="@dimen/_1sdp"
+        app:civ_border_color="@color/white"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_5sdp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/profile_img"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_7sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:src="@drawable/ic_triangle"
+            android:rotation="180"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_2sdp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:textSize="@dimen/_14ssp"
+        android:background="@drawable/circle_bg"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:drawableBottom="@drawable/ic_log_out"
+        android:elevation="@dimen/_7sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:layout_marginStart="@dimen/_150sdp"
+        android:layout_marginEnd="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/hidden_txt_cycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/there_is_no_photos_to_display"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/white"
+        android:layout_below="@+id/profile_img"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_container"
+        android:layout_below="@+id/view"
+        android:padding="@dimen/_10sdp"
+        android:overScrollMode="never"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_12sdp">
+
+        <EditText
+            android:id="@+id/file_name_editTxt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_5sdp"
+            android:textColorHint="@color/dark_blue"
+            android:inputType="textCapWords|textNoSuggestions"
+            android:textSize="@dimen/_11ssp"
+            android:background="@drawable/edittxt_bg"
+            android:paddingStart="@dimen/_10sdp"
+            android:hint="@string/choose_file"/>
+
+        <LinearLayout
+            android:id="@+id/ll_replace"
+            android:layout_width="@dimen/_33sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:background="@drawable/circle_bg"
+            android:padding="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/replace_img_vw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_file_plus"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upload_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_bg"
+            android:padding="@dimen/_7sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_upload_cloud"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
