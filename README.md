@@ -1,14 +1,14 @@
 # <img src="https://github.com/SrinivasanJayakumarr/PhotoVault/blob/master/ScreenShots/photovault_icon.png" width="70"> <a href="https://github.com/SrinivasanJayakumarr/PhotoVault" target="_blank">Photo Vault</a>
 
-![API](https://img.shields.io/badge/API-23%2B-brightgreen.svg?style=flat) [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) ![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat) [![GitHub issues](https://img.shields.io/github/issues/SrinivasanJayakumarr/PhotoVault)](https://github.com/SrinivasanJayakumarr/PhotoVault/issues) ![OpenSource](https://img.shields.io/badge/OpenSource-YES-brightgreen) [![GitHub forks](https://img.shields.io/github/forks/SrinivasanJayakumarr/PhotoVault)](https://github.com/SrinivasanJayakumarr/PhotoVault/network)
+![API](https://img.shields.io/badge/API-26%2B-brightgreen.svg?style=flat) [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) ![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat) [![GitHub issues](https://img.shields.io/github/issues/SrinivasanJayakumarr/PhotoVault)](https://github.com/SrinivasanJayakumarr/PhotoVault/issues) ![OpenSource](https://img.shields.io/badge/OpenSource-YES-brightgreen) [![GitHub forks](https://img.shields.io/github/forks/SrinivasanJayakumarr/PhotoVault)](https://github.com/SrinivasanJayakumarr/PhotoVault/network)
 
-## _A Weather app that gives uninterupted and seamless weather data_
+## _A cloud based photo storing app for Android_
 
 
 ### :scroll: Description
 
-Inside the app, we have a functionality to get live weather data for our current location and location search functionality too. We can get a live weather update
-for any _remote location_. App provides 12 hours of forecast weather data for a queried location.
+An app that has feature to _upload , store , view and delete_. Applicaion fully built upon _Firebase_. It has some traditional features like Mail Authentication
+to ensure the protection. Quick and Efficient way to organise your private images from an usual storage. Supports all kind of Mail Providers.
 
 - Ease of use
 - User friendly
@@ -22,18 +22,24 @@ for any _remote location_. App provides 12 hours of forecast weather data for a 
 
 ## :hammer_and_wrench: Libraries, Widgets and Tools
 
+- _Firebase Auth_
+- _Firebase Database_
+- _Firebase Storage_
+- FileChooser - to select the image
+- AlertDialog
+- Handler
+- ProgressBar
+- CircleImageView
 - Batch Drawable Importer
-- ViewModel - LiveData
+- SharedAnimations - Animation between Activities using Pairs[ ]
 - SharedPreferences - To store and retrieve data whenever the app is restarted
 - Card View
 - ImageView
+- Button
+- TextView
 - Material Design Components
-- RecyclerView (Horizontal)
-- Picasso
-- Volley
-- OkHttp
-- <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a>
-- JSON
+- RecyclerView
+- Picasso / Glide
 - and some minor tools, views and widgets
 
 ## :computer: Language
@@ -97,3 +103,6 @@ Motorola One Power Android V10 (stock UI)
 
 ## Versioning
 We use GitHub for Versioning.
+
+
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/) <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white" width="91"/>
